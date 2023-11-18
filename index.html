@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div>
+  <nav class="navbar">
+    <li>
+      <ul><img src="./images/logo.svg" alt=""></ul>
+      <ul class="dropdown" data-dropdown><button data-dropdown-button class="link">Features</button><div class="dropdown-menu" >dropdowncontent</div></ul>
+      <ul><a href="">Company</a></ul>
+      <ul><a href="">Careers</a></ul>
+      <ul><a href="">About</a></ul>
+  </li>
+  <div class="btn-group">
+  <a href="">login</a>
+  <button>Register</button>
+  </div>
+ </nav>
+ <div class="container">
+   <div class="hero-text">
+    <h1>Make <span></span>  remote work</h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.
+    </p>
+    <button>Learn more</button>
+   </div>
+   <div class="img-container">
+    <picture>
+      <source
+      srcset="./images/image-hero-desktop.png"
+      media="(max-width:1280px)"
+     >
+    <img class="hero-img"src="./images/image-hero-mobile.png" alt="">
+    </picture>
+   </div>
+ </div>
+</div>
+</body>
+</html>
